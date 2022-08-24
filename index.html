@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name ="viewport" content="width=device-width, initial-scale=1">
+        <h1 style="color:black; text-align: center;">TO DO</h1>
+    </head>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        .bg-img {
+
+  background-image: url("https://images.pexels.com/photos/317356/pexels-photo-317356.jpeg?auto=compress&cs=tinysrgb&w=800") ;
+  min-height: 800px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+.container {
+  position: absolute;
+  margin: 20px;
+  width: auto;
+}
+
+.topnav a {
+  float: left;
+  color:black;
+  background-color:cadetblue;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+        }
+ .topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+.topnav a.split {
+  float: right;
+  color: black;
+}
+
+.centered {
+  padding: 50px 50px;
+  align-items: center;
+  justify-content: center;
+}
+input {
+  margin: 0;
+  background: rgb(0, 0, 0); 
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 0;
+  width: 70%;
+  padding: 10px;
+  float: left;
+  font-size: 16px;
+  color:black;
+
+}
+.addBtn {
+  padding: 12px;
+  width: 10%;
+  background: #d9d9d9;
+  color: #555;
+  float: left;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 0;
+
+}
+
+.addBtn:hover {
+  background-color: #bbb;
+}
+::placeholder {
+  color:darkgrey;
+}
+
+ul {
+  margin: 0;
+  padding: 50px 50px;
+  list-style-type:none;
+}
+ul li {
+  cursor:pointer;
+  position:relative;
+font-size: large;
+}
+
+
+
+</style>
+</head>
+<script src = "./scripts/Main.js"></script>
+
+<body> 
+    <div class="bg-img">
+<div class ="centered">
+<input type="text" id="myInput" placeholder="What to do?">
+<div>
+  <span id = "addBtn" onclick="createList()" class="addBtn">Add</span>
+</div>
+</div>
+<ul id="test">
+  <li>test</li>
+  <li>test</li>
+  <li>test</li>
+  <li>test</li>
+  <li>test</li>
+  <li>test</li>
+</ul>
+</div> 
+</body>
+</html>
+
+
